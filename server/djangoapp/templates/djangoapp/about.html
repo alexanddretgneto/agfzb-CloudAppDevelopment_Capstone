@@ -14,7 +14,19 @@
     <style>
 
         .about_header {
-            font-size: 14px;
+            font-size: 40px;
+            margin-top: 10px;
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+        .about_body {
+            font-family: Arial;
+            font-size:25px;
+            margin-top: 0px;
+        }
+
+        .about_image {
+            width: 750px;
         }
         
         </style>
@@ -25,10 +37,8 @@
                <div class="navbar-header">
                    <a class="navbar-brand" href="#">Dealership Reviews</a>
                </div>
-               <ul>
                    <a class="btn btn-link" href="{% url 'djangoapp:about' %}">About Us</a>
                    <a class="btn btn-link" href="{% url 'djangoapp:contact' %}">Contact Us</a>
-               </ul>
                <ul class="nav navbar-nav navbar-right">
                        {% if user.is_authenticated %}
                        <li>
@@ -52,12 +62,30 @@
        </nav>
    
        <div class="container-fluid">
-        <h1 class="about_header"
-            <br>
-            Welcome to Best Cars dealership, home to the best cars in North America. We sell domestic and imported cars at reasonable prices.
-        </h1>
-    </div>
+            <p class="about_header">
+                Welcome to Best Cars dealership.
+            </p>
+        </div>
+        
+        <div class="container-fluid">
+            <p class="about_body">
+                 We are home to the best cars in North America. We sell domestic and imported cars at reasonable prices. At Best Cars dealership, you can be sure to get the bang for your buck. We sell all kinds of makes and models of cars including brands like Kia, Voltswagen, Ford, Dodge, Cheverolette and much more. We take pride in being awarded with Top 10 most customer friendly dealerships in the nation! This just shows how eager we are to meet you and get you the perfect car for you. Come in today! 
+            </p>
+                <img class ="about_image" src="https://www.veristrat.com/wp-content/uploads/2020/09/automotive-printing-and-mailing-services.jpg">
+        </div>
 
-       </body>
+        <div class="container-fluid">
+            <p class="about_header">
+                Our Story
+            </p>
+        </div>
+
+        <div class="container-fluid">
+            <p class="about_body">
+                Grant Angler founded this company in 1890. Following his death in 1910, his family has kept the business going. It is still family owned to this day. Austin Angler holds ownership of the company now with his brother Martin being head of Marketing & Design.
+            </p>
+        </div>
+    
+    </body>
 
 </html>
