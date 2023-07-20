@@ -1,9 +1,9 @@
 name: 'Lint Code'
 
-on: workflow_dispatch
-  push: [master, main]
+on:
+  push:
     branches: [master, main]
-  pull_request: [master, main]
+  pull_request:
     branches: [master, main]
 
 jobs: # list of things to do
